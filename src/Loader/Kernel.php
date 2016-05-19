@@ -3,11 +3,16 @@
 
 namespace App\Loader;
 
+use App\Provider\EventDispatcherServiceProvider;
+use App\Provider\FlashListenerServiceProvider;
+use App\Provider\FlashServiceProvider;
+use App\Provider\LoggerServiceProvider;
+use App\Provider\PDOServiceProvider;
+use App\Provider\TwigServiceProvider;
 use Interop\Container\ContainerInterface;
 use Pimple\ServiceProviderInterface;
 use Slim\App;
 use Slim\Container;
-use WHCPC\Provider\TwigServiceProvider;
 
 
 class Kernel
@@ -39,26 +44,10 @@ class Kernel
         $services = [
             new TwigServiceProvider(),
             new PDOServiceProvider(),
-            new DashboardHandlerServiceProvider(),
-            new NewsRepositoryServiceProvider(),
-            new CSRFServiceProvider(),
-            new NewsHandlerServiceProvider(),
-            new AdminHandlerServiceProvider(),
-            new DocumentsRepositoryServiceProvider(),
-            new StatusesRepositoryServiceProvider(),
-            new ValidatorServiceProvider(),
-            new NewsValidationServiceProvider(),
             new EventDispatcherServiceProvider(),
             new FlashServiceProvider(),
             new FlashListenerServiceProvider(),
             new LoggerServiceProvider(),
-            new DocumentsHandlerServiceProvider(),
-            new DocumentsValidationServiceProvider(),
-            new DocumentsFileUploaderServiceProvider(),
-            new GraphGuzzleServiceProvider(),
-            new GraphServiceProvider(),
-            new EventsHandlerServiceProvider(),
-            new AuthenticationMiddlewareServiceProvider()
         ];
 
         foreach ($services as $service) {

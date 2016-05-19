@@ -11,7 +11,7 @@ if (PHP_SAPI == 'cli-server') {
 require __DIR__ . '/../vendor/autoload.php';
 
 use Slim\App;
-use WHCPC\Loader\Kernel;
+use App\Loader\Kernel;
 use Slim\Middleware\DebugBar;
 use Slim\Middleware\DebugBarRoutes;
 
