@@ -11,10 +11,30 @@
             "homepage": "http://www.joshlockhart.com/"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/Raistlfiren/slim-debugbar.git"
+        }
+    ],
     "require": {
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
-        "slim/php-view": "^2.0",
-        "monolog/monolog": "^1.17"
+        "slim/twig-view": "^2.1",
+        "slim/csrf": "^0.6.0",
+        "symfony/validator": "^3.0",
+        "symfony/event-dispatcher": "^3.0",
+        "slim/flash": "^0.1.0",
+        "kanellov/slim-twig-flash": "^0.1.0",
+        "symfony/property-access": "^3.0",
+        "monolog/monolog": "^1.19",
+        "yusukezzz/slim-debugbar": "dev-slim3 as 1.0.0",
+        "aura/sqlquery": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Tests\\": "tests/"
+        }
     }
 }
