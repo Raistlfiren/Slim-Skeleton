@@ -15,5 +15,5 @@ abstract class AbstractController implements ControllerInterface
         $this->app = $app;
     }
 
-    abstract function registerRoutes();
+    abstract public function registerRoutes();
 }

@@ -13,7 +13,7 @@ return [
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',
-            'path' => __DIR__ . '/../../logs/app.log',
+            'path' => __DIR__ . '/../../var/logs/app.log',
         ],
 
         // PDO settings
@@ -25,7 +25,7 @@ return [
             'password' => 'pwd',
         ],
 
-        //Change to production to remove debug bar
+        //Change to false to remove debug bar
         'debugbar' => true,
     ],
 ];

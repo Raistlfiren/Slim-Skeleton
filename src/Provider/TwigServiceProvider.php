@@ -16,7 +16,7 @@ class TwigServiceProvider implements ServiceProviderInterface
     {
         $c['view'] = function ($c) {
             $view = new Twig(__DIR__ . '/../../templates/view', [
-                'cache' => __DIR__ . '/../../templates/cache',
+                'cache' => __DIR__ . '/../../var/cache',
                 'autoreload' => true,
                 'debug' => true
             ]);
