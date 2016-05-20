@@ -13,7 +13,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Slim\App;
 use App\Loader\Kernel;
 use Slim\Middleware\DebugBar;
-use Slim\Middleware\DebugBarRoutes;
+use Slim\Routes\DebugBarRoutes;
 
 session_start();
 
