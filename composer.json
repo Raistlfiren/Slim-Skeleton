@@ -1,5 +1,5 @@
 {
-    "name": "slim/slim-skeleton",
+    "name": "Raistlfiren/slim-skeleton",
     "description": "A Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","router", "psr7"],
     "homepage": "http://github.com/slimphp/Slim-Skeleton",
