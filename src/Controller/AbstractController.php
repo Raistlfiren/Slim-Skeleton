@@ -5,7 +5,7 @@ namespace App\Controller;
 
 use Slim\App;
 
-class AbstractController
+abstract class AbstractController implements ControllerInterface
 {
     /** @var App $app */
     protected $app;
@@ -14,4 +14,6 @@ class AbstractController
     {
         $this->app = $app;
     }
+
+    abstract function registerRoutes();
 }
